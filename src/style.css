@@ -1,9 +1,9 @@
 @font-face {
-  font-family:"Chalk writing";
+  font-family: "Chalk writing";
   src: url("./assets/DkCrayonCrumble-ddll.ttf") format("truetype");
 }
 
-* {
+* { /* stylelint-disable-line */
   font-family: Chalk writing;
 }
 
@@ -22,7 +22,7 @@ h3 {
 
 li {
   font-size: 26px;
-  color: #ffffffcc;
+  color: #fffc;
   list-style-type: none;
 }
 
@@ -78,7 +78,7 @@ button {
   padding: 5px;
   max-height: 48vh;
   overflow-y: auto;
-  border: 2px solid #ffffffcc;
+  border: 2px solid #fffc;
   border-radius: 5px;
 }
 
@@ -91,6 +91,6 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffffffcc;
+  background: #fffc;
   border-radius: 3px;
 }
