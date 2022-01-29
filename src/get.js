@@ -5,11 +5,12 @@ const getScores = async () => {
 };
 
 export default () => {
-  const list = document.querySelector('ul');
   getScores().then((json) => {
-    const infoArr = json.result;
-    for (let i = 0; i < infoArr.length; i += 1) {
-      list.innerHTML += `<li class="list-group-item${i % 2 === 0 ? ' secondary-list-iteam' : ''}">${infoArr[i].user}: ${infoArr[i].score}</li>`;
+    const scoresArr = json.result;
+    const arrangedList = scoresArr.sort((a, b) => b.score - a.score);
+    for (let i = 0; i < arrangedList.length; i += 1) {
+      const list = document.querySelector('ul');
+      list.innerHTML += `<li class="list-group-item${i % 2 === 0 ? ' secondary-list-iteam' : ''}">${arrangedList[i].user}: ${arrangedList[i].score}</li>`;
     }
   });
 };
