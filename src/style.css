@@ -3,9 +3,11 @@
   src: url("./assets/DkCrayonCrumble-ddll.ttf") format("truetype");
 }
 
-* { /* stylelint-disable-line */
+/* stylelint-disable */
+* {
   font-family: Chalk writing;
 }
+/* stylelint-enable */
 
 h1 {
   font-size: 56px;
