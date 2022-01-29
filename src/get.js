@@ -10,7 +10,7 @@ export default () => {
     const arrangedList = scoresArr.sort((a, b) => b.score - a.score);
     for (let i = 0; i < arrangedList.length; i += 1) {
       const list = document.querySelector('ul');
-      list.innerHTML += `<li class="list-group-item${i % 2 === 0 ? ' secondary-list-iteam' : ''}">${arrangedList[i].user}: ${arrangedList[i].score}</li>`;
+      list.innerHTML += `<li>${arrangedList[i].user}: ${arrangedList[i].score}</li>`;
     }
   });
 };
