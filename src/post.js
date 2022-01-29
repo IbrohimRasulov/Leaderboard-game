@@ -13,21 +13,18 @@ const postScore = async (user, score) => {
     },
   });
   const json = data.json();
-
   return json;
 };
 
 export default function () {
-  const form = document.querySelector("form");
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
+    const form = document.querySelector("form");
     const user = document.querySelector("#name").value;
     const score = document.querySelector("#score").value;
 
+    e.preventDefault();
     postScore(user, score);
-
     form.reset();
   });
 };

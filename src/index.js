@@ -8,7 +8,7 @@ const list = document.querySelector('ul');
 refresh.addEventListener('click', () => {
   list.innerHTML = '';
   get();
-})
+});
 
 get();
 post();
