@@ -8,7 +8,7 @@ input {
   justify-content: space-around;
 }
 
-#board-container,
+#score-container,
 #form-container {
   display: inline-block;
   width: 400px;
