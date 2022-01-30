@@ -16,7 +16,7 @@ const postScore = async (user, score) => {
   return json;
 };
 
-export default function () {
+export default function post() {
   const form = document.querySelector('form');
   form.addEventListener('submit', (e) => {
     const user = document.querySelector('#name').value;

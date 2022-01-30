@@ -1,35 +1,41 @@
 @font-face {
-  font-family: "Chalk writing";
-  src: url("./assets/DkCrayonCrumble-ddll.ttf") format("truetype");
+  font-family: "Chalk";
+  src: url("./assets/ChalkboardByMartaVanEck-gvpp.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BackToSchoolElements";
+  src: url("./assets/BackToSchoolElementsDemo-ar5g.ttf") format("truetype");
 }
 
 /* stylelint-disable */
 * {
-  font-family: Chalk writing;
+  font-family: Chalk;
 }
 /* stylelint-enable */
 
 h1 {
-  font-size: 56px;
-  padding: 100px 0 10px 0;
+  font-size: 60px;
+  padding: 90px 0 10px 0;
   color: white;
   text-align: center;
 }
 
 h3 {
-  font-size: 38px;
+  font-size: 36px;
   color: white;
   padding-bottom: 10px;
 }
 
 li {
-  font-size: 26px;
-  color: #fffc;
+  font-size: 24px;
+  color: #fffd;
   list-style-type: none;
 }
 
 ul {
-  margin: 5px 0 5px 15px;
+  margin-left: 15px;
+  line-height: 32px;
 }
 
 body {
@@ -45,9 +51,15 @@ input {
   border: none;
   border-bottom: 2px solid #ffffffe0;
   width: 100%;
-  font-size: 26px;
+  font-size: 24px;
   color: white;
   outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .container {
@@ -63,12 +75,11 @@ input {
 }
 
 button {
-  padding: 5px 20px 0 20px;
+  padding: 2px 12px;
   border: 2px solid white;
   border-radius: 20px;
-  background-color: #3ac47d;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bolder;
 }
 
@@ -76,12 +87,36 @@ button {
   background-color: #1c78bb;
 }
 
+#refresh:hover {
+  margin-right: -25px;
+}
+
+.fas {
+  display: none;
+}
+
+#refresh:hover > .fas {
+  display: inline-block;
+  font-size: 18px;
+  padding-left: 7px;
+  color: #00ff7b;
+}
+
+#submit {
+  background-color: #3ac47d;
+}
+
+#submit:hover {
+  transition: 0.7s;
+  letter-spacing: 4px;
+  padding: 2px 18px;
+  margin-right: -16px;
+}
+
 #list-wrapper {
   padding: 5px;
   max-height: 48vh;
   overflow-y: auto;
-  border: 2px solid #fffc;
-  border-radius: 5px;
 }
 
 ::-webkit-scrollbar {
@@ -93,6 +128,40 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fffc;
+  background: white;
   border-radius: 3px;
+}
+
+/* stylelint-disable */
+#form-container p {
+  color: white;
+  font-family: BackToSchoolElements;
+}
+
+h1 span {
+  font-family: BackToSchoolElements;
+  color: white;
+  padding-left: 20px;
+}
+/* stylelint-enable */
+
+#arrow {
+  font-size: 30px;
+  text-align: right;
+  margin-top: 60px;
+  margin-right: 80px;
+}
+
+#paperPlane {
+  font-size: 120px;
+  margin-left: 30px;
+  margin-top: -50px;
+}
+
+#currentDate {
+  float: right;
+  font-size: 22px;
+  margin-top: -45px;
+  color: white;
+  margin-right: -35px;
 }
