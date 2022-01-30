@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: "Chalk-13";
+  font-family: "BackToSchoolElements";
   src: url("./assets/BackToSchoolElementsDemo-ar5g.ttf") format("truetype");
 }
 
@@ -87,16 +87,12 @@ button {
   background-color: #1c78bb;
 }
 
-.fas {
-  display: none;
-}
-
-#submit {
-  background-color: #3ac47d;
-}
-
 #refresh:hover {
   margin-right: -25px;
+}
+
+.fas {
+  display: none;
 }
 
 #refresh:hover > .fas {
@@ -104,6 +100,10 @@ button {
   font-size: 18px;
   padding-left: 7px;
   color: #00ff7b;
+}
+
+#submit {
+  background-color: #3ac47d;
 }
 
 #submit:hover {
@@ -130,4 +130,28 @@ button {
 ::-webkit-scrollbar-thumb {
   background: white;
   border-radius: 3px;
+}
+
+#form-container p {
+  color: white;
+  font-family: BackToSchoolElements;
+}
+
+h1 span {
+  font-family: BackToSchoolElements;
+  color: white;
+  padding-left: 20px;
+}
+
+#arrow {
+  font-size: 30px;
+  text-align: right;
+  margin-top: 60px;
+  margin-right: 80px;
+}
+
+#paperPlane {
+  font-size: 120px;
+  margin-left: 30px;
+  margin-top: -50px;
 }
