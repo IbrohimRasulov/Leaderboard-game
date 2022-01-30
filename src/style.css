@@ -132,6 +132,7 @@ button {
   border-radius: 3px;
 }
 
+/* stylelint-disable */
 #form-container p {
   color: white;
   font-family: BackToSchoolElements;
@@ -142,6 +143,7 @@ h1 span {
   color: white;
   padding-left: 20px;
 }
+/* stylelint-enable */
 
 #arrow {
   font-size: 30px;
