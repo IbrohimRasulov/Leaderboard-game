@@ -4,7 +4,7 @@
 
 > In this activity I set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. I consume the Leaderboard API using JavaScript async and await and add some styling.
 
-![screenshot](./app_screenshot.png)
+https://user-images.githubusercontent.com/78875455/151706776-d756189d-2309-4163-9284-f73d2d134266.mp4
 
 ## Built With
 
