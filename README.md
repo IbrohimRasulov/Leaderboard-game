@@ -4,10 +4,7 @@
 
 > In this activity I set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. I consume the Leaderboard API using JavaScript async and await and add some styling.
 
-<video controls autoplay>
-  <source src="./preview.mp4" type="video/mp4">
-  Preview video
-</video>
+![Preview video](./preview.gif)
 
 ## Built With
 
