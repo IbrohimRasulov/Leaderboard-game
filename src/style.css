@@ -155,3 +155,11 @@ h1 span {
   margin-left: 30px;
   margin-top: -50px;
 }
+
+#currentDate {
+  float: right;
+  font-size: 22px;
+  margin-top: -45px;
+  color: white;
+  margin-right: -35px;
+}
