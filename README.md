@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/78875455/151708099-e3db96a5-1ed3-415c-
 
 ## Live Demo
 
-[Live Demo Link](https://ibrohimrasulov.github.io/Leaderboard-game/dist)
+[Live Demo Link](https://ibrohimrasulov.github.io/Leaderboard-game/dist){:target="_blank"}
 
 ### Prerequisites
 
