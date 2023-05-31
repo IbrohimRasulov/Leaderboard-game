@@ -12,11 +12,11 @@
 * {
   font-family: Chalk;
 }
+
 /* stylelint-enable */
 
 h1 {
   font-size: 60px;
-  padding: 90px 0 10px 0;
   color: white;
   text-align: center;
 }
@@ -36,12 +36,48 @@ li {
 ul {
   margin-left: 15px;
   line-height: 32px;
+  height: 340PX;
 }
 
 body {
-  background-image: url("./assets/background.jpg");
-  background-position: left;
+  background-image: url("./assets/wooden-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url("./assets/blackboard.png");
+  /* background-color: #1c78bb; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 850px;
+  height: 560px;
+  padding: 0;
+  margin: 100px auto;
+}
+
+.content {
+  display: inline-block;
+  padding: 25px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#score-container,
+#form-container {
+  width: 350px;
 }
 
 input {
@@ -60,18 +96,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-#score-container,
-#form-container {
-  display: inline-block;
-  width: 320px;
-  margin: 0 30px;
 }
 
 button {
@@ -95,7 +119,7 @@ button {
   display: none;
 }
 
-#refresh:hover > .fas {
+#refresh:hover>.fas {
   display: inline-block;
   font-size: 18px;
   padding-left: 7px;
@@ -107,7 +131,7 @@ button {
 }
 
 #submit:hover {
-  transition: 0.7s;
+  transition: 0.5s;
   letter-spacing: 4px;
   padding: 2px 18px;
   margin-right: -16px;
@@ -143,6 +167,7 @@ h1 span {
   color: white;
   padding-left: 20px;
 }
+
 /* stylelint-enable */
 
 #arrow {
@@ -163,5 +188,4 @@ h1 span {
   font-size: 22px;
   margin-top: -45px;
   color: white;
-  margin-right: -35px;
 }
